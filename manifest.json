@@ -1,0 +1,23 @@
+{
+  "name": "Cookie-Cruncher",
+  "description": "Detects, sorts and removes cookies on every website",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "minimum_chrome_version": 92,
+  "permissions": [
+    "tabs",
+    "cookies",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

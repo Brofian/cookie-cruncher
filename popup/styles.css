@@ -1,0 +1,28 @@
+body {
+    border: 2px solid #ff7633;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #555;
+}
+
+table tr td {
+    padding: 5px;
+}
+
+table tr td:not(:last-of-type) {
+    border-right: 1px solid #555;
+}
+
+table tr:not(:last-of-type) td,
+table thead tr td {
+    border-bottom: 1px solid #555;
+}
+
+table thead,
+table tbody tr:nth-of-type(2n) {
+    background: #eee;
+}
